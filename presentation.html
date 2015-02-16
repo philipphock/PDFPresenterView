@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PDF Slide Presenter</title>
+         <link href="css/clear.css" rel="stylesheet"/>
+         <link href="css/baseclasses.css" rel="stylesheet"/>
+        <link href="css/presenter.css" rel="stylesheet"/>
+        <link href="css/startpage.css" rel="stylesheet"/>
+        <link href="css/buttons.css" rel="stylesheet"/>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="loader">
+            <div class="containercenter">
+                <div class="contentcenter">
+                    <h1>PDF Slide Presenter</h1>
+                    <label>PDF</label>
+                    <input class="whitebutton" type="file" id="loadpdf" name="files[]"/><br>
+                    <label>Notes</label>
+                    <input class="whitebutton" type="file" id="loadnotes" name="files[]"/>
+
+
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Time</td>
+                                <td><input type="time" value="20:00"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Notes</td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+
+                            <div class="right">
+                                <button class="startbtn">start</button>
+                            </div>
+                
+                        </table>
+                   </div>
+                </div>
+            </div>
+            
+
+            
+        </section>
+        <section id="pres">
+            <canvas id="c0"></canvas>
+            <canvas id="c1" class="buffer"></canvas>
+        </section>
+    </body>
+    
+    <script src="js/lib/jquery-2.1.3.min.js"></script>
+    <!--
+    <script src="js/core.js"></script>
+    <script src="js/controller0.js"></script>
+    -->
+    <script src="js/lib/compatibility.js"></script>
+    <script src="js/lib/pdf.js"></script>
+    
+    <script src="js/Presentation.class.js"></script>
+    <script src="js/controller.firstpage.js"></script>
+    <script src="js/controller.presentation.js"></script>
+    <script src="js/controller.presenterview.js"></script>
+    <script src="js/presentation.main.js"></script>
+    
+    
+        
+</html>

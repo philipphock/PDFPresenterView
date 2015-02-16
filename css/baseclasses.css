@@ -1,0 +1,26 @@
+.containercenter{
+    width:100%;
+    display:block;
+    text-align: center;
+}
+
+.contentcenter{
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
+}
+
+.paddinglr{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.right{
+    float:right;
+}
+
+
+.fl{
+    float:left;
+}
+
